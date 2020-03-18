@@ -4,6 +4,7 @@ layout: post
 title: "我的ACM回忆录"
 date: 2012-04-18 22:54
 comments: true
+readingtime: 10
 tags: ['acm']
 ---
 
