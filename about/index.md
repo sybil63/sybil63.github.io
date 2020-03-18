@@ -1,9 +1,7 @@
 ---
 layout: page
-title: Sybil63
+title: 关于本站
 ---
-
-<p class="title">{{ page.title }} </p>
 
 ##About  
 * 89年生，性别女
