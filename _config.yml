@@ -10,13 +10,10 @@ tiled_bg:           false   # Set this true if you want to tile your background 
 locale:             en_US
 url:                https://sybil63.github.io
 
-#The syntax to highlight code
-#monokai, perldoc, default, native
-syntax: perldoc
-
 # Jekyll
 permalink:          /:title/
 markdown:           kramdown
+mathjax:            true
 highlighter:        rouge
 kramdown:
   auto_ids:         true
@@ -24,7 +21,6 @@ kramdown:
   entity_output:    as_char
   toc_levels:       1..6
   enable_coderay:   false
-mathjax:            true
 sass:
   sass_dir:         _sass
   style:            compressed
