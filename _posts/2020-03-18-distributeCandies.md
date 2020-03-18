@@ -5,7 +5,7 @@ title: 1103. 分糖果，一元二次方程O(num_people)
 date: 2020-03-18 16:17
 comments: true
 readingtime: 10
-tags: [leetcode]
+tags: [leetcode,简单,Math]
 ---
 ### 解题思路
 由于糖果分配符合 $$a_{i} = 1,2,3,..., a_{i-1}, a_{i}, a_{i+1}$$ 的规律

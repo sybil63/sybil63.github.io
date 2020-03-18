@@ -5,7 +5,7 @@ title: 229. 求众数II，摩尔投票O(n)
 date: 2020-03-18
 comments: true
 readingtime: 10
-tags: [leetcode]
+tags: [leetcode,中等,Math]
 ---
 ### 摩尔投票算法
 >作者：喝七喜
