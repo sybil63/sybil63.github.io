@@ -3,7 +3,7 @@ title:              Sybil
 bio:                'personal blog'
 description:        "Sybil's blog."
 reading_time:       true
-words_per_minute:   200
+words_per_minute:   100
 logo:               'assets/img/logo.jpg'
 background:         'assets/img/placeholder-big.jpg'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
@@ -12,7 +12,7 @@ url:                https://sybil63.github.io
 
 # Jekyll
 permalink:          /:title/
-markdown:           monokai
+markdown:           kramdown
 highlighter:        rouge
 kramdown:
   auto_ids:         true
@@ -26,7 +26,13 @@ sass:
   style:            compressed
 
 # Comments
-disqus_shortname:   taylantatli
+#disqus_shortname:   taylantatli
+#Disqus Comments
+disqus_short_name: sybil63
+disqus_show_comment_count: true
+
+# Google Analytics
+google_analytics_tracking_id: UA-30241835-1
 
 # Social
 # if you don't have any of social below, comment the line.
