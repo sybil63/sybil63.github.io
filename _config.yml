@@ -10,6 +10,11 @@ tiled_bg:           false   # Set this true if you want to tile your background 
 locale:             en_US
 url:                https://sybil63.github.io
 
+#The syntax to highlight code
+#monokai, perldoc, default, native
+syntax: monokai
+paginate: 1 //the number of post per page
+
 # Jekyll
 permalink:          /:title/
 markdown:           kramdown
