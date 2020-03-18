@@ -4,7 +4,7 @@ layout: post
 title: 使用GoDaddy和DnsPod配置github blog域名
 date: 2013-04-16 15:17
 comments: false
-categories: [github, blog]
+tags: [github, blog]
 ---
 
 ## 在blog项目代码里增加文件CNAME，内容为自己的domain

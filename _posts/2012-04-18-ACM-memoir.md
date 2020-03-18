@@ -3,8 +3,8 @@ published: true
 layout: post
 title: "我的ACM回忆录"
 date: 2012-04-18 22:54
-comments: false
-categories: ['acm']
+comments: true
+tags: ['acm']
 ---
 
 ## 前言

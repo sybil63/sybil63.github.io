@@ -3,8 +3,8 @@ published: true
 layout: post
 title: 搭建maven repo私服
 date: 2012-11-19
-comments: false
-categories: [maven]
+comments: true
+tags: [maven]
 ---
 # 关于Maven
 最近几天开始看hadoop的代码，hadoop使用maven构建项目，所以顺便看了下maven。感觉这个东西对于开源的项目来说，确实是很有意义的。
