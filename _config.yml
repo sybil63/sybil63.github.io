@@ -12,8 +12,7 @@ url:                https://sybil63.github.io
 
 #The syntax to highlight code
 #monokai, perldoc, default, native
-syntax: monokai
-paginate: 1 //the number of post per page
+syntax: perldoc
 
 # Jekyll
 permalink:          /:title/

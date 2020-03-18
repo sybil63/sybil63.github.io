@@ -4,6 +4,7 @@ layout: post
 title: 新玩具
 date: 2012-05-21 21:22
 comments: true 
+readingtime: 10
 tags: [life]
 ---
 

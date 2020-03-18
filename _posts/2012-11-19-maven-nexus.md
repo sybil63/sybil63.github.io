@@ -4,6 +4,7 @@ layout: post
 title: 搭建maven repo私服
 date: 2012-11-19
 comments: true
+readingtime: 5
 tags: [maven]
 ---
 # 关于Maven
