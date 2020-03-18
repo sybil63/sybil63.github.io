@@ -25,8 +25,10 @@ $$r = \frac{n}{num_{people}}$$
 1. 先计算前 `r` 轮的分配
 
     $$ans[0] = 1 + (1+num_{people}) + (1 + 2*num_{people}) + ... + (1 + (r-1)*num_{people});$$
-    $$=>ans[0] = 1 * r + num_{people} * \frac{r*(r-1)}{2};$$
-    $$=>ans[i] = (i+1) * r + num_{people} * \frac{r * (r-1)}{2};$$
+
+    $$\\=>ans[0] = 1 * r + num_{people} * \frac{r*(r-1)}{2};$$
+
+    $$\\=>ans[i] = (i+1) * r + num_{people} * \frac{r * (r-1)}{2};$$
 
 2. 再遍历模拟单独处理 `r+1` 轮的分配
 

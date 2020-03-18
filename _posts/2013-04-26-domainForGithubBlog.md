@@ -1,5 +1,5 @@
 ---
-published: true
+published: false
 layout: post
 title: 使用GoDaddy和DnsPod配置github blog域名
 date: 2013-04-16 15:17
