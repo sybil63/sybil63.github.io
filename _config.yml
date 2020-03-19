@@ -26,10 +26,7 @@ sass:
   style:            compressed
 
 # Comments
-#disqus_shortname:   taylantatli
-#Disqus Comments
-disqus_short_name: sybil63
-disqus_show_comment_count: true
+disqus_shortname:   sybil63
 
 # Google Analytics
 google_analytics_tracking_id: UA-30241835-1
