@@ -7,13 +7,14 @@ comments: true
 readingtime: 10
 tags: [leetcode,中等,动态规划]
 ---
-
 ### 解题思路
-$$F_{sum}$$： 前`n-1`种硬币组成`sum`的最少硬币数
+$$F_{sum,n-1}$$： 前`n-1`种硬币组成`sum`的最少硬币数
 
-转移方程（加入第n种硬币）： 前n种硬币组成sum的最少硬币数
+转移方程（加入第n种硬币，面值为coin）： 前n种硬币组成sum的最少硬币数。
 
-  $$F_{sum} = Min \{ F_{sum}, F_{sum-coin}+1, F_{sum-2coin} + 2, ..., F_{sum-coin*\frac{amount}{coin}}+\frac{amount}{coin}\} $$
+要么不用第n种硬币，要么用$$[1, \frac{amount}{coin}]$$枚第n种硬币。
+
+  $$F_{sum,n} = Min \{ F_{sum,n-1}, F_{sum-coin,n-1}+1, F_{sum-2coin,n-1} + 2, ..., F_{sum-coin*\frac{amount}{coin},n-1}+\frac{amount}{coin}\} $$
 
 * $$N_{c}$$： coin的数量
 * $$N_{a}$$： amount的大小
@@ -25,6 +26,8 @@ $$F_{sum}$$： 前`n-1`种硬币组成`sum`的最少硬币数
 ```java
 class Solution {
     public int coinChange(int[] coins, int amount) {
+        // F[sum]：表示前n种硬币组成sum的最少硬币数
+        // 由于计算时只使用了F[sum][n-1]，所以直接压缩掉了一维
         int[] ans = new int[amount+1];
         for (int i = 1; i <= amount; ++i) {
             ans[i] = -1;
@@ -68,7 +71,7 @@ class Solution {
             int c = coins[i];
             if (c <= amount && ans[c] == -1) ans[c] = 1;
             // 因为sum是递增计算的，所以当计算到ans[sum]的时候，
-            // ans[sum-c]已经计算过了，表示前n种硬币组成sum的最少硬币数
+            // ans[sum-c]已经计算过了，表示前n种硬币组成sum-c的最少硬币数
             for (int sum = c; sum <= amount; ++sum) {
                     if (ans[sum-c] != -1 &&
                         (ans[sum] == -1 || ans[sum-c] + 1 < ans[sum])) {

@@ -5,7 +5,7 @@ title: 搭建maven repo私服
 date: 2012-11-19
 comments: true
 readingtime: 5
-tags: [maven]
+tags: [java,hadoop]
 ---
 # 关于Maven
 最近几天开始看hadoop的代码，hadoop使用maven构建项目，所以顺便看了下maven。感觉这个东西对于开源的项目来说，确实是很有意义的。
@@ -52,16 +52,13 @@ maven的另一个好处是，依赖的管理。这个问题对于贵司来说用
         密码：admin123
 
  * nexus里可以配置3种类型的仓库，分别是proxy、hosted、group
+    * proxy是远程仓库的代理。比如说在nexus中配置了一个central repository的proxy，当用户向这个proxy请求一个artifact，这个proxy就会先在本地查找，如果找不到的话，就会从远程仓库下载，然后返回给用户，可以理解为公用repo服务器的一个镜像。
 
-        * proxy是远程仓库的代理。比如说在nexus中配置了一个central repository的proxy，当用户向这个proxy请求一个artifact，这个proxy就会先在本地查找，如果找不到的话，就会从远程仓库下载，然后返回给用户，可以理解为公用repo服务器的一个镜像。
+    * hosted是宿主仓库，用户可以把自己的一些构件，deploy到hosted中，也可以手工上传构件到hosted里。相当于自己公司项目的代码库。
 
-        * hosted是宿主仓库，用户可以把自己的一些构件，deploy到hosted中，也可以手工上传构件到hosted里。相当于自己公司项目的代码库。
+    * group是仓库组，在maven里没有这个概念，是nexus特有的，实际上group并不是实际的仓库，而是一个聚合多个仓库的虚拟仓库。目的是将上述多个仓库聚合，对用户暴露统一的地址，这样用户就不需要在pom中配置多个地址，只要统一配置group的地址就可以了
 
-        * group是仓库组，在maven里没有这个概念，是nexus特有的，实际上group并不是实际的仓库，而是一个聚合多个仓库的虚拟仓库。目的是将上述多个仓库聚合，对用户暴露统一的地址，这样用户就不需要在pom中配置多个地址，只要统一配置group的地址就可以了
-
-         nexus装好之后，已经初始化定义了一些repository，我们熟悉之后，就可以自行删除、新增、编辑
-
- * 访问nexus后登录为管理员就能进行repo的相关操作
+ * nexus装好之后，已经初始化定义了一些repository，我们熟悉之后，就可以自行删除、新增、编辑。访问nexus后登录为管理员就能进行repo的相关操作
 
  ![nexus-repo](/images/nexus.png)
 

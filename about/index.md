@@ -1,8 +1,8 @@
 ---
-layout: page
+layout: post
 title: 关于本站
 date: 2012-03-09
-comments: false
+comments: true
 ---
 
 ## About

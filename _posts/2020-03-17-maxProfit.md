@@ -38,6 +38,11 @@ profit[0][2] = 0; // 一直未持有
 - 时间复杂度为 $$O(N * stat)$$
 - 空间负责度为 $$O(N * stat)$$
 
+
+> 根据 122 题 [https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/solution/tan-xin-suan-fa-by-liweiwei1419-2/](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/solution/tan-xin-suan-fa-by-liweiwei1419-2/) 的思路写的
+![dp1.png](http://sybil63.github.io/images/dp1.png)
+![dp2.png](http://sybil63.github.io/images/dp2.png)
+
 ### 代码
 
 ```java
